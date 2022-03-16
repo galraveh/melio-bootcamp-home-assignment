@@ -6,14 +6,14 @@ import {
 import "../Page.css";
 import { CardList } from "../../components/CardList/CardList";
 
-export const Home = () => {
+export const Favorites = () => {
   const [candidates, setCandidatesFunction] = useState([]);
 
   useEffect(() => {
-    runOnHomePageLoad();
+    runOnFavoritesPageLoad();
   }, []);
 
-  const runOnHomePageLoad = async () => {
+  const runOnFavoritesPageLoad = async () => {
     const fethedCandidates = await fetchCandidatesOnPageLoad();
     setCandidatesFunction(fethedCandidates);
   };
@@ -24,13 +24,13 @@ export const Home = () => {
   };
 
   return (
-    <div id="home" className="page">
-      <div className="page-title">Firm's candidates</div>
+    <div id="favorites" className="page">
+      <div className="page-title">Favorite candidates</div>
       <div className="page-subtitle">Gal</div>
       <CardList
         candidates={candidates}
         handleFavoriteClick={handleFavoriteClick}
-        filterByFavorites={false}
+        filterByFavorites={true}
       />
     </div>
   );

@@ -1,3 +1,7 @@
 #navbar {
   border-bottom: 1px solid grey;
+  display: flex;
+  gap: 20px;
+  background-color: #ffff;
+  padding: 15px;
 }

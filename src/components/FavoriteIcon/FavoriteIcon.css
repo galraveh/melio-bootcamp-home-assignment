@@ -1,0 +1,12 @@
+.favorite-icon-wrapper {
+  display: none;
+  fill: #EBEBEB;
+}
+.favorite-icon-wrapper.favorite {
+  display: flex;
+  fill: #d71b3d;
+}
+
+.favorite-icon-wrapper:hover svg {
+  cursor: pointer;
+}

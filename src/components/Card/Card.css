@@ -1,0 +1,85 @@
+.card {
+  padding: 8px;
+  display: flex;
+  background-color: #ffff;
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 300px;
+  width: 75vw;
+}
+
+.is-pc .card:hover {  
+  box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+.is-pc .card:hover .favorite-icon-wrapper {
+  display: flex;
+  fill: #d71b3d;
+}
+
+.is-mobile .card .favorite-icon-wrapper {
+  display: flex;
+}
+
+.card-favorite-wrapper{
+  display: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  align-items: center;
+  width: 24px;
+}
+
+.is-mobile .card-favorite-wrapper{
+  margin-right: 10px;
+}
+
+.card-image {
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 7px;
+  height: 60px;
+  width: 60px;
+}
+
+.card-inner {
+  margin-left: 5px;
+  overflow: hidden;
+  margin-right: 3px;
+  flex-grow: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.card-name {
+  margin-right: 8px;
+  font-weight: bold;
+  display: flex;
+  font-size: 15px;
+}
+
+.preferred-pill {
+  background-color: rgb(10, 0, 128);
+  border: none;
+  color: #ffff;
+  text-align: center;
+  padding: 0 5px;
+  border-radius: 16px;
+  font-size: 10px;
+  align-self: center;
+}
+
+.is-mobile .preferred-pill {
+  margin-left: auto;
+}
+
+.card-header {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.card-info {
+  margin-bottom: 4px;
+  color: dimgrey;
+  font-size: 11px;
+  overflow-wrap: break-word;
+}
